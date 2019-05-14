@@ -1,0 +1,39 @@
+{
+  "name": "vanila-spa",
+  "version": "1.0.0",
+  "description": "This is a Base Version of Vanilla javascript based Single Page Application (SPA)",
+  "main": "index.js",
+  "dependencies": {
+    "sqlite3": "^4.0.8",
+    "webpack": "^4.31.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "dotenv-webpack": "^1.7.0",
+    "laravel-mix": "^4.0.15",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.20.1",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princeteck/vanilla-javascript-spa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/princeteck/vanilla-javascript-spa/issues"
+  },
+  "homepage": "https://github.com/princeteck/vanilla-javascript-spa#readme"
+}
